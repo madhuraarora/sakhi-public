@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap');
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('/fonts/HelveticaNeue-Medium.woff2') format('woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('/fonts/HelveticaNeue-Light.woff2') format('woff2');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('/fonts/HelveticaNeue-Medium.woff2') format('woff2');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('/fonts/HelveticaNeue-Bold.woff2') format('woff2');
+  font-weight: 700;
+}
+
+:root {
+  --brand-primary: #FF2F4F;
+  --brand-secondary: #FF90A1;
+  --brand-light: #FCC6D3;
+  --brand-pale: #FBE1D9;
+  --brand-soft: #FEE3DA;
+  --brand-bg: #FFFBEF;
+
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  background: var(--brand-bg);
+  color: #333;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1 0 auto;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 786px){
+
+  .content {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+  main.content {
+    padding-left: 0;
+  }
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+button {
+  all: unset;
+}

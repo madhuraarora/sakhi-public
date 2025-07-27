@@ -1,0 +1,31 @@
+ .coming-soon-strip {
+  display: flex;
+  flex-wrap: nowrap;                
+  overflow: hidden;                 
+  justify-content: space-between;   
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #fffbef;
+  border-top: 1px solid #e5cdd1;
+  box-sizing: border-box;
+  position: relative;
+  border-bottom: 2px solid #FCC6D3;
+}
+
+.cs-item {
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #3a3a3a;
+  margin-right: 40px; 
+}
+
+.cs-item.measure {
+  position: absolute;
+  visibility: hidden;
+  left: -9999px;
+  margin-right: 0;
+}
+
